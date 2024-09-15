@@ -26,7 +26,7 @@ def get_program_path(program_name):
     program_path = search_program(program_name)
     return program_path
 
- def get_output_media(audio_file_path, timed_captions, background_video_data, video_server):
+def get_output_media(audio_file_path, timed_captions, background_video_data, video_server):
     OUTPUT_FILE_NAME = "rendered_video.mp4"
     magick_path = get_program_path("magick")
     print(magick_path)
@@ -52,7 +52,7 @@ def get_program_path(program_name):
     audio_clips.append(audio_file_clip)
 
     # for (t1, t2), text in timed_captions:
-    #     text_clip = TextClip(txt=text, fontsize=80, color="yellow", stroke_width=3, stroke_color="yellow", method="label")
+    #     text_clip = TextClip(txt=text, fontsize=100, color="white", stroke_width=3, stroke_color="black", method="label")
     #     text_clip = text_clip.set_start(t1)
     #     text_clip = text_clip.set_end(t2)
     #     text_clip = text_clip.set_position(["center", 800])
