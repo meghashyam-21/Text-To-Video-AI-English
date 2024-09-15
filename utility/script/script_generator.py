@@ -8,7 +8,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 def generate_script(topic):
     prompt = (
         """You are a seasoned content writer for a YouTube Shorts channel, specializing in facts videos. 
-        Your facts shorts are concise, each lasting less than 50 seconds (approximately 140 words). 
+        Your facts shorts are concise, each lasting about 5 minutes. 
         They are incredibly engaging and original. When a user requests a specific type of facts short, you will create it.
 
         For instance, if the user asks for:
