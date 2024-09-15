@@ -26,7 +26,8 @@ def get_program_path(program_name):
     program_path = search_program(program_name)
     return program_path
 
-def get_output_media(audio_file_path, timed_captions, background_video_data, video_server):
+ def get_output_media(audio_file_path, timed_captions, background_video_data, video_server):
+   timed_captions = ""
     OUTPUT_FILE_NAME = "rendered_video.mp4"
     magick_path = get_program_path("magick")
     print(magick_path)
