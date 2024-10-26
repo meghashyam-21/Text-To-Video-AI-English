@@ -8,7 +8,8 @@ def search_videos(query_string, orientation_landscape=True):
    
     url = "https://api.pexels.com/videos/search"
     headers = {
-        "Authorization": PEXELS_API_KEY
+        "Authorization": PEXELS_API_KEY,
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
     params = {
         "query": query_string,
